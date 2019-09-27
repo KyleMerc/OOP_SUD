@@ -1,6 +1,6 @@
 <?php
 
-namespace Noblesse\Character\Misc;
+namespace Game\Noblesse\CharacterSetting;
 
 interface EnemyCharacterSetting
 {

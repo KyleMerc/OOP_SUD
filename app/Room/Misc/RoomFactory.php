@@ -4,7 +4,7 @@ namespace Noblesse\Room\Misc;
 
 require_once __DIR__.'../../../../vendor/autoload.php';
 
-use Noblesse\Room\Misc\RoomSetting as Setting;
+use Game\Noblesse\RoomSetting as Setting;
 use Noblesse\Room\Room;
 use Noblesse\Room\FourthRoom;
 

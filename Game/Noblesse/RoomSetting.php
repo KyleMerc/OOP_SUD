@@ -1,6 +1,6 @@
 <?php
 
-namespace Noblesse\Room\Misc;
+namespace Game\Noblesse;
 
 interface RoomSetting
 {

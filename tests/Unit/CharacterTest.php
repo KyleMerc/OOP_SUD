@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Noblesse\Character\Factory\CharacterFactory as Char;
+use Noblesse\Character\Misc\CharacterFactory as Char;
 
 class CharacterTest extends TestCase
 {
