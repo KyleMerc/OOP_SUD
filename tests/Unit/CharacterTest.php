@@ -46,4 +46,15 @@ class CharacterTest extends TestCase
         $character->grab(['chopsticks']);
         $character->showInventory();
     }
+
+    /** 
+     * @test 
+     * @doesNotPerformAssertions
+     */
+    public function usage_of_character_utility(): void
+    {
+        $opt = \Noblesse\Utility\showPickChar();
+        $char = Char::makeMainCharacter($opt);
+        // var_dump($char);
+    }
 }

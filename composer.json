@@ -15,7 +15,8 @@
     "autoload": {
         "psr-4": {
             "Noblesse\\": "app",
-            "Game\\": "Game"
+            "Game\\": "Game",
+            "SUD\\": "./"
         },
         "files": [
             "app/Utility/Helpers.php"

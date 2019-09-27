@@ -24,6 +24,7 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'SUD\\' => 4,
         ),
         'P' => 
         array (
@@ -62,6 +63,10 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'SUD\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/',
         ),
         'Prophecy\\' => 
         array (
@@ -118,6 +123,9 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         'Doctrine\\Instantiator\\Exception\\UnexpectedValueException' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php',
         'Doctrine\\Instantiator\\Instantiator' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php',
         'Doctrine\\Instantiator\\InstantiatorInterface' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php',
+        'Game\\Noblesse\\CharacterSetting\\EnemyCharacterSetting' => __DIR__ . '/../..' . '/Game/Noblesse/CharacterSetting/EnemyCharacterSetting.php',
+        'Game\\Noblesse\\CharacterSetting\\MainCharacterSetting' => __DIR__ . '/../..' . '/Game/Noblesse/CharacterSetting/MainCharacterSetting.php',
+        'Game\\Noblesse\\RoomSetting' => __DIR__ . '/../..' . '/Game/Noblesse/RoomSetting.php',
         'MyCLabs\\Enum\\Enum' => __DIR__ . '/..' . '/myclabs/php-enum/src/Enum.php',
         'MyCLabs\\Enum\\PHPUnit\\Comparator' => __DIR__ . '/..' . '/myclabs/php-enum/src/PHPUnit/Comparator.php',
         'Noblesse\\Character\\Character' => __DIR__ . '/../..' . '/app/Character/Character.php',
@@ -658,6 +666,7 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         'Prophecy\\Prophet' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Prophet.php',
         'Prophecy\\Util\\ExportUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php',
         'Prophecy\\Util\\StringUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/StringUtil.php',
+        'SUD\\Noblesse' => __DIR__ . '/../..' . '/Noblesse.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',

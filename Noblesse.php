@@ -1,5 +1,7 @@
 <?php
 
+namespace SUD;
+
 require_once __DIR__.'/vendor/autoload.php';
 
 use Noblesse\Character\Misc\CharacterFactory as CharMake;
@@ -11,18 +13,65 @@ use function Noblesse\Utility\{showPickChar, showCommands};
 
 class Noblesse
 {
-    public static $mainChar;
-    public static $room;
+    public $mainChar;
+    public $room;
 
-    public static function startGame(): void
+    public function startGame(): void
     {
-        $pickChar = CharMake::makeMainCharacter($opt = showPickChar());
+        $gameOpt = '';
 
-        if ($pickChar) {
-            self::$mainChar = $pickChar;
-            self::$room     = new RoomMovement(Room::setUpCharRoom($opt));
+        while (true) {
+            $pickChar = CharMake::makeMainCharacter($opt = showPickChar());
+
+            if ($pickChar) {
+                $this->mainChar = $pickChar;
+                $this->room     = new RoomMovement(Room::setUpCharRoom($opt));
+                break;
+            }
+        }
+
+        while ($gameOpt !== 'quit') {
+            $gameOpt = $this->showGameCommands();
+        }
+    }
+
+    public function showGameCommands(): ?string
+    {
+        echo "\nTo know which command, type [help]\n";
+        $optCmd = readline("Enter a command: ");
+
+        if ($optCmd === 'quit') {
+            echo "\nGoodbye!!!\n";
+            return 'quit';
+        }
+
+        switch ($optCmd) {
+            case 'help':
+                showCommands();
+                return NULL;
+            case 'status':
+                Char::getStatus($this->mainChar);
+                return NULL;
+            case 'hint':
+                echo $this->room->currentRoom;
+                return NULL;
+            case 'travel':
+                $this->room->showRoomMenu($this->mainChar);
+                return NULL;
+            case 'grab':
+                $this->mainChar->grab($this->room->currentRoom->items);
+                return NULL;
+            case 'inventory':
+                $this->mainChar->showInventory();
+                return NULL;
+            case 'unlock':
+                $this->mainChar->unlockNextRoom($this->room->currentRoom);
+                return NULL;
+            case 'wakeup':
+                return NULL;
+            default:
+                echo "\nInvalid command...\n";
+                return NULL;
         }
     }
 }
-
-Noblesse::startGame();

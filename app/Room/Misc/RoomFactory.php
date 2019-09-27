@@ -20,7 +20,7 @@ class RoomFactory
     public static function setUpCharRoom(string $charName): ?Room
     {
         $charRoom = Setting::ROOM_NAMESPACE . strtoupper($charName) . "_ROOM_SETTING";
-        var_dump(count($charRoom));
+
         if (@constant($charRoom)) {
             $roomSetUp = constant($charRoom);
 
