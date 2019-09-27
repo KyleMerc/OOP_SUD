@@ -40,7 +40,7 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         ),
         'G' => 
         array (
-            'Game\\' => 5,
+            'GameSetting\\' => 12,
         ),
         'D' => 
         array (
@@ -80,9 +80,9 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         array (
             0 => __DIR__ . '/..' . '/myclabs/php-enum/src',
         ),
-        'Game\\' => 
+        'GameSetting\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Game',
+            0 => __DIR__ . '/../..' . '/GameSetting',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -123,9 +123,6 @@ class ComposerStaticInit4c3c25606bd0e82515db0ba2caa1d061
         'Doctrine\\Instantiator\\Exception\\UnexpectedValueException' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php',
         'Doctrine\\Instantiator\\Instantiator' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php',
         'Doctrine\\Instantiator\\InstantiatorInterface' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php',
-        'Game\\NoblesseSetting\\EnemyCharacter' => __DIR__ . '/../..' . '/Game/NoblesseSetting/EnemyCharacter.php',
-        'Game\\NoblesseSetting\\MainCharacter' => __DIR__ . '/../..' . '/Game/NoblesseSetting/MainCharacter.php',
-        'Game\\NoblesseSetting\\Room' => __DIR__ . '/../..' . '/Game/NoblesseSetting/Room.php',
         'MyCLabs\\Enum\\Enum' => __DIR__ . '/..' . '/myclabs/php-enum/src/Enum.php',
         'MyCLabs\\Enum\\PHPUnit\\Comparator' => __DIR__ . '/..' . '/myclabs/php-enum/src/PHPUnit/Comparator.php',
         'Noblesse\\Character\\Character' => __DIR__ . '/../..' . '/app/Character/Character.php',

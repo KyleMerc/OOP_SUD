@@ -8,10 +8,11 @@ use Noblesse\Character\Misc\CharacterFactory as CharMake;
 use Noblesse\Utility\CharUtil as Char;
 use Noblesse\Room\Misc\RoomFactory as Room;
 use Noblesse\Utility\RoomMovement;
+use SUD\GameList\GameStart;
 
 use function Noblesse\Utility\{showPickChar, showCommands};
 
-class Noblesse
+class Noblesse implements GameStart
 {
     public $mainChar;
     public $room;

@@ -6,7 +6,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 class GameManager
 {
-    public static function chooseGame(): void
+    public static function chooseGame(): \SUD\GameList\GameStart
     {
         echo <<<MENU
         Choose a game
@@ -18,7 +18,7 @@ MENU;
 
         $gameOpt = __NAMESPACE__ . '\\' . self::returnWordGame($opt);
 
-        var_dump(new $gameOpt());
+        return new $gameOpt();
     }
 
     private static function returnWordGame(string $opt): string

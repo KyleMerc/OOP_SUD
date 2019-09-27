@@ -1,6 +1,6 @@
 <?php
 
-namespace Game\NoblesseSetting;
+namespace GameSetting\Noblesse;
 
 interface MainCharacter
 {

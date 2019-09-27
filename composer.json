@@ -15,7 +15,7 @@
     "autoload": {
         "psr-4": {
             "Noblesse\\": "app",
-            "Game\\": "Game",
+            "GameSetting\\": "GameSetting",
             "SUD\\": "./"
         },
         "files": [

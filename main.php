@@ -6,3 +6,4 @@ use SUD\GameList\Noblesse;
 use SUD\GameList\GameManager;
 
 $game = GameManager::chooseGame();
+$game->startGame();
