@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/vendor/autoload.php';
 
-use SUD\Noblesse;
+use SUD\GameList\Noblesse;
+use SUD\GameList\GameManager;
 
-$game = new Noblesse();
-$game->startGame();
+$game = GameManager::chooseGame();

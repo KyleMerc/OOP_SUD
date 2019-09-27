@@ -1,8 +1,8 @@
 <?php
 
-namespace Game\Noblesse\CharacterSetting;
+namespace Game\NoblesseSetting;
 
-interface MainCharacterSetting
+interface MainCharacter
 {
     const CHAR_NAMESPACE = __CLASS__ . "::";
 

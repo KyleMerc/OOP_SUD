@@ -1,8 +1,8 @@
 <?php
 
-namespace SUD;
+namespace SUD\GameList;
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 use Noblesse\Character\Misc\CharacterFactory as CharMake;
 use Noblesse\Utility\CharUtil as Char;

@@ -4,8 +4,8 @@ namespace Noblesse\Character\Misc;
 
 require_once __DIR__.'../../../../vendor/autoload.php';
 
-use Game\Noblesse\CharacterSetting\MainCharacterSetting as MainSet;
-use Game\Noblesse\CharacterSetting\EnemyCharacterSetting as EnemySet;
+use Game\NoblesseSetting\MainCharacter as MainSet;
+use Game\NoblesseSetting\EnemyCharacter as EnemySet;
 use Noblesse\Character\MainCharacter;
 use Noblesse\Character\EnemyCharacter;
 

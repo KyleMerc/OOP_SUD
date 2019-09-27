@@ -1,8 +1,8 @@
 <?php
 
-namespace Game\Noblesse;
+namespace Game\NoblesseSetting;
 
-interface RoomSetting
+interface Room
 {
     const ROOM_NAMESPACE = __CLASS__ . "::";
 
