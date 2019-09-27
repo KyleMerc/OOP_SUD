@@ -5,17 +5,18 @@ namespace SUD\GameList;
 require_once __DIR__.'/../vendor/autoload.php';
 
 use Noblesse\Character\Misc\CharacterFactory as CharMake;
-use Noblesse\Utility\CharUtil as Char;
 use Noblesse\Room\Misc\RoomFactory as Room;
+use Noblesse\Utility\CharUtil as Char;
 use Noblesse\Utility\RoomMovement;
+use Noblesse\Room\FourthRoom;
 use SUD\GameList\GameStart;
 
 use function Noblesse\Utility\{showPickChar, showCommands};
 
 class Noblesse implements GameStart
 {
-    public $mainChar;
-    public $room;
+    private $mainChar;
+    private $room;
 
     public function startGame(): void
     {
@@ -69,6 +70,10 @@ class Noblesse implements GameStart
                 $this->mainChar->unlockNextRoom($this->room->currentRoom);
                 return NULL;
             case 'wakeup':
+                if ($this->room->currentRoom instanceof FourthRoom)
+                    $this->room->currentRoom->wakeUpNoblesse($this->mainChar);
+                else
+                    echo "\nThe Noblesse is not here\n";
                 return NULL;
             default:
                 echo "\nInvalid command...\n";
